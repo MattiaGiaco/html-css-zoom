@@ -14,6 +14,7 @@ body{
 header{
   height: 50px;
   text-align: right;
+  padding: 5px;
 }
 
 .view button{
@@ -25,9 +26,32 @@ header{
   cursor: pointer;
 }
 
-main{;
+main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   height: calc(100vh - 130px);
   overflow: auto;
+}
+
+.participants{
+  position: relative;
+  width: 250px;
+  height: 150px;
+  padding: 2px;
+}
+
+.participants img{
+  width: 100%;
+  height: 100%;
+}
+
+.participants span{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  padding: 8px;
 }
 
 footer{
@@ -48,7 +72,7 @@ footer{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 10px;
+  padding: 8px;
   cursor: pointer;
 }
 
