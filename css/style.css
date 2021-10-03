@@ -7,6 +7,7 @@
 body{
   background-color: black;
   color: white;
+  font-size: 14px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -21,4 +22,49 @@ header{
   padding: 5px;
   border-radius: 5px;
   border: 0;
+  cursor: pointer;
+}
+
+main{;
+  height: calc(100vh - 130px);
+  overflow: auto;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: #222;
+}
+
+.menu-left, .menu-center, .menu-right{
+  display: flex;
+  flex-shrink: 0;
+}
+
+.icon{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.icon i{
+  margin-bottom: 5px;
+}
+
+.icon.active i{
+  color: #4BC800;
+}
+
+.menu-right button{
+  height: 80px;
+  color: red;
+  background-color: #4A4A4A;
+  border: none;
+  padding: 0 15px;
+  cursor: pointer;
 }
