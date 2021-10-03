@@ -3,3 +3,22 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body{
+  background-color: black;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header{
+  height: 50px;
+  text-align: right;
+}
+
+.view button{
+  background-color: #35363A;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  border: 0;
+}
